@@ -305,6 +305,18 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.02e
   .pole::before, .ticker-track { animation: none; }
   .btn:hover { transform: none; }
 }
+
+.swg-photos { padding: 2.4rem 0 3rem; }
+.swg-photos .wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+.swg-photos h2 { margin: 0 0 .35rem; font-size: clamp(1.4rem, 3vw, 2rem); }
+.swg-photos .note { margin: 0 0 1rem; font-size: .85rem; opacity: .8; max-width: 60ch; }
+.swg-photos .hero-shot img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; display: block; background: #222; }
+.swg-photos .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; margin-top: 1rem; }
+.swg-photos figure { margin: 0; }
+.swg-photos figure img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; display: block; background: #222; }
+.swg-photos figcaption { font-size: .72rem; margin-top: .4rem; opacity: .75; }
+@media (max-width: 720px) { .swg-photos .grid { grid-template-columns: 1fr; } }
+
 </style>
 </head>
 <body>
@@ -382,6 +394,27 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.02e
         <p class="lede">Astoria Barber Company is a barber shop at 1004 Marine Drive in Astoria, Oregon. This page is here so the rest of town can find the phone number fast.</p>
         <p>Need a cut before work, a fade tightened up, or a beard cleaned? Call <a href="tel:+15037349472">(503) 734-9472</a>. Walk-ins are the shop’s everyday rhythm; a quick call is the surest way to know if a chair is open.</p>
         <p class="note">Service list below is typical of a barber shop. Confirm what’s on the menu when you call — we have not verified a published price list.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="swg-photos" aria-labelledby="photos-h">
+    <div class="wrap">
+      <h2 id="photos-h">Shop atmosphere</h2>
+      <p class="note">No verified photos of this shop were available. These are stock images so the page isn’t empty.</p>
+      <div class="hero-shot">
+        <img src="images/hero.webp" alt="Stock photo of a barber shop interior" width="1600" height="900" fetchpriority="high" decoding="async">
+      </div>
+      <div class="grid">
+      <figure>
+        <img src="images/cut.webp" alt="Haircut in progress (stock)" width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Haircut in progress (stock)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/chair.webp" alt="Barber chair (stock)" width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption>Barber chair (stock)</figcaption>
+      </figure>
       </div>
     </div>
   </section>
